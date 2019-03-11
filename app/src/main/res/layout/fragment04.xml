@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ly_main_weixin"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/sx"/>
+        <TextView
+            android:id="@+id/username_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/Order_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="left|center"
+        android:text="我的订单"/>
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/user_rg"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_da"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/id_tab_finish"
+                style="@style/style_RadioButton"
+                android:layout_width="150dp"
+                android:layout_height="90dp"
+                android:background="@drawable/user_radiobutton_background"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/finish"
+                android:textSize="18dp"
+                android:textColor="@color/radiobutton_textcolor"
+                android:text="48" />
+
+
+            <RadioButton
+                android:id="@+id/id_tab_wait"
+                style="@style/style_RadioButton"
+                android:layout_width="150dp"
+                android:layout_height="90dp"
+                android:background="@drawable/user_radiobutton_background"
+                android:checked="true"
+                android:drawableTop="@drawable/wait"
+                android:textSize="18dp"
+                android:textColor="@color/radiobutton_textcolor"
+                android:text="30" />
+
+            <RadioButton
+                android:id="@+id/id_tab_undone"
+                style="@style/style_RadioButton"
+                android:layout_width="150dp"
+                android:layout_height="90dp"
+                android:checked="true"
+                android:background="@drawable/user_radiobutton_background"
+                android:drawableTop="@drawable/undone"
+                android:gravity="center"
+                android:button="@null"
+                android:textSize="18dp"
+                android:textColor="@color/radiobutton_textcolor"
+                android:text="10"/>
+            />
+</RadioGroup>
+    </LinearLayout>
+
+
+-->
+
+</LinearLayout>

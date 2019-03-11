@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:paddingRight="15dp"
+    android:background="@drawable/card_background_selector">
+    <!--android:descendantFocusability="afterDescendants">&lt;!&ndash; 给每个item增加background &ndash;&gt;
+    android:descendantFocusability="beforeDescendants">&lt;!&ndash; 为突出卡片效果，需设置左右padding,上下通过listView的divider设置 &ndash;&gt;-->
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/xsfelvis"/>
+    <LinearLayout
+        android:id="@+id/message_LLTV"
+        android:orientation="vertical"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/card_background_selector">
+        <TextView
+            android:id="@+id/massage_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/massageTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:maxEms="30"
+            android:ellipsize="end"
+            android:text="dgasdfgasdgsadgsadgsdagsdagasdgasdgasdgsdagsdagasdgsadgasdg"
+            android:textSize="15dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="15dp"
+        android:layout_below="@id/message_LLTV">
+        <!--android:background="@drawable/card_background_selector"
+        android:descendantFocusability="afterDescendants">--><!-- 给每个item增加background -->
+        <TextView
+            android:id="@+id/message_thims"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="星期三"
+            android:textSize="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

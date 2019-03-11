@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.wzq.sxzx"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" /><!-- 添加网络权限-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name="com.sxzx.activity.FragementActivity"
+            android:launchMode="singleTask"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustNothing"><!--导航栏浮动问题 （adjustNothing-窗口不做调整）-->
+
+
+            android:label="This is sportsActivity" >
+
+        </activity>
+<activity android:name="com.sxzx.net.LoginActivity">
+
+<!--    <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+    </intent-filter>-->
+
+</activity>
+        <activity android:name="com.sxzx.net.RegActivity"></activity>
+
+        <activity android:name="com.sxzx.activity.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.sxzx.activity.SSS" android:exported="true"></activity>
+        <activity android:name="com.sxzx.activity.SubmitActivity" android:exported="true"></activity>
+        <activity android:name="com.sxzx.activity.OrderActivty" android:exported="true"></activity>
+        <activity android:name="com.sxzx.activity.ForgotActivity" android:exported="true"></activity>
+
+    </application>
+
+
+</manifest>
